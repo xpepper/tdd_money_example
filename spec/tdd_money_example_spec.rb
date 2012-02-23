@@ -1,9 +1,10 @@
 require "spec_helper"
 
-describe "TddMoneyExample" do
-  it "should foo" do
-    baz = TddMoneyExample.new
-    bar = baz.foo
-    bar.should == "BAR"
+describe "Dollar" do
+  it "should handle multiplication" do
+    five = Dollar.new(5)
+    five.times(2)
+    
+    five.amount.should == 10
   end
 end
