@@ -1,11 +1,10 @@
 class Dollar
-  def initialize(amount)  
-  end
+  attr_reader :amount
   
-  def amount
-    10
+  def initialize(amount)
+    @amount = 10
   end
-  
-  def times(how_many)  
+
+  def times(how_many)
   end
 end
